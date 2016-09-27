@@ -40,7 +40,7 @@
                 android:textColor="@color/colorSky"
                 android:fontFamily="sans-serif-medium"/>
         </LinearLayout>
-        <View
+        <ImageView
             android:id="@+id/avatar"
             android:layout_marginLeft="80dp"
 
@@ -60,7 +60,7 @@
            android:layout_width="0dp"
            android:layout_weight="2"
            android:layout_height="match_parent">
-           <View
+           <ImageView
                android:id="@+id/bit_map_4"
                android:layout_marginBottom="10dp"
                android:layout_width="145.6dp"
@@ -70,14 +70,15 @@
            <LinearLayout
                android:layout_width="wrap_content"
                android:layout_height="wrap_content">
-               <View
+               <ImageView
                    android:id="@+id/bit_map_1"
                    android:layout_marginRight="7dp"
                    android:layout_width="64.8dp"
 
                    android:layout_height="55dp"
                    android:background="@drawable/rectangle"/>
-               <View
+               <ImageView
+
                    android:id="@+id/bit_map"
                    android:layout_width="68.8dp"
 
@@ -92,21 +93,21 @@
            android:layout_width="0dp"
            android:layout_weight="1"
            android:layout_height="wrap_content">
-           <View
+           <ImageView
                android:id="@+id/bit_map_3"
                android:layout_marginRight="10dp"
                android:layout_marginBottom="10dp"
                android:layout_width="67.8dp"
                android:layout_height="55dp"
                android:background="@drawable/rectangle"/>
-           <View
+           <ImageView
                android:id="@+id/bit_map_2"
                android:layout_marginRight="10dp"
                android:layout_marginBottom="10dp"
                android:layout_width="67.8dp"
                android:layout_height="55dp"
                android:background="@drawable/rectangle"/>
-           <View
+           <ImageView
                android:id="@+id/bit_map_8"
                android:layout_marginRight="10dp"
                android:layout_width="67.8dp"
@@ -120,7 +121,7 @@
            android:layout_width="0dp"
            android:layout_weight="2"
            android:layout_height="match_parent">
-           <View
+           <ImageView
                android:id="@+id/bit_map_7"
                android:layout_marginBottom="10dp"
                android:layout_width="146dp"
@@ -129,13 +130,13 @@
            <LinearLayout
                android:layout_width="wrap_content"
                android:layout_height="wrap_content">
-               <View
+               <ImageView
                    android:id="@+id/bit_map_6"
                    android:layout_marginRight="10dp"
                    android:layout_width="67.8dp"
                    android:layout_height="55dp"
                    android:background="@drawable/rectangle"/>
-               <View
+               <ImageView
                    android:id="@+id/play_icon"
                    android:layout_width="67.8dp"
                    android:layout_height="55dp"
@@ -163,7 +164,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <View
+            <ImageView
                 android:id="@+id/bit_map_12"
                 android:layout_marginRight="10dp"
                 android:layout_width="0dp"
@@ -171,7 +172,7 @@
                 android:layout_height="130dp"
                 android:background="@drawable/rectangle"/>
 
-            <View
+            <ImageView
                 android:id="@+id/bit_map_11"
                 android:layout_width="0dp"
                 android:layout_weight="1"
