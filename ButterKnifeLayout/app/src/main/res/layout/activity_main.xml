@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.example.admin.butterknifelayout.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THURSDAY,JULY 14"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorBrown"/>
+            <TextView
+                android:paddingLeft="20dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For You"
+                android:textSize="30dp"
+                android:textColor="@color/colorSky"
+                android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/avatar"
+            android:layout_marginLeft="80dp"
+
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/circle"/>
+
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_marginRight="10dp"
+           android:orientation="vertical"
+           android:layout_width="0dp"
+           android:layout_weight="2"
+           android:layout_height="match_parent">
+           <View
+               android:id="@+id/bit_map_4"
+               android:layout_marginBottom="10dp"
+               android:layout_width="145.6dp"
+               android:layout_height="120dp"
+               android:background="@drawable/rectangle"
+           />
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <View
+                   android:id="@+id/bit_map_1"
+                   android:layout_marginRight="7dp"
+                   android:layout_width="64.8dp"
+
+                   android:layout_height="55dp"
+                   android:background="@drawable/rectangle"/>
+               <View
+                   android:id="@+id/bit_map"
+                   android:layout_width="68.8dp"
+
+                   android:layout_height="55dp"
+                   android:background="@drawable/rectangle"/>
+           </LinearLayout>
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_marginRight="10dp"
+           android:orientation="vertical"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content">
+           <View
+               android:id="@+id/bit_map_3"
+               android:layout_marginRight="10dp"
+               android:layout_marginBottom="10dp"
+               android:layout_width="67.8dp"
+               android:layout_height="55dp"
+               android:background="@drawable/rectangle"/>
+           <View
+               android:id="@+id/bit_map_2"
+               android:layout_marginRight="10dp"
+               android:layout_marginBottom="10dp"
+               android:layout_width="67.8dp"
+               android:layout_height="55dp"
+               android:background="@drawable/rectangle"/>
+           <View
+               android:id="@+id/bit_map_8"
+               android:layout_marginRight="10dp"
+               android:layout_width="67.8dp"
+               android:layout_height="55dp"
+               android:background="@drawable/rectangle"/>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="0dp"
+           android:layout_weight="2"
+           android:layout_height="match_parent">
+           <View
+               android:id="@+id/bit_map_7"
+               android:layout_marginBottom="10dp"
+               android:layout_width="146dp"
+               android:layout_height="120dp"
+               android:background="@drawable/rectangle"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <View
+                   android:id="@+id/bit_map_6"
+                   android:layout_marginRight="10dp"
+                   android:layout_width="67.8dp"
+                   android:layout_height="55dp"
+                   android:background="@drawable/rectangle"/>
+               <View
+                   android:id="@+id/play_icon"
+                   android:layout_width="67.8dp"
+                   android:layout_height="55dp"
+                   android:background="@drawable/rectangle"/>
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recently Played"
+            android:textSize="30dp"
+            android:textColor="@color/colorSky"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/bit_map_12"
+                android:layout_marginRight="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="130dp"
+                android:background="@drawable/rectangle"/>
+
+            <View
+                android:id="@+id/bit_map_11"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="130dp"
+                android:background="@drawable/rectangle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:layout_width="27dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="24dp"
+                android:background="@drawable/albums"/>
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="24dp"
+                android:background="@drawable/path"/>
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="24dp"
+                android:background="@drawable/music_note"/>
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_marginRight="50dp"
+                android:layout_height="24dp"
+                android:background="@drawable/radio"/>
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="24dp"
+                android:background="@drawable/search"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
