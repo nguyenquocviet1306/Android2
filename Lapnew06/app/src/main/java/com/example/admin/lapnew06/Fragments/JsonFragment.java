@@ -10,9 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.admin.lapnew06.R;
+import com.example.admin.lapnew06.adapters.JsonAdapter;
 import com.example.admin.lapnew06.constants.Constants;
 import com.example.admin.lapnew06.jsonmodels.JsonModels;
 import com.google.gson.Gson;
@@ -37,10 +39,8 @@ import static com.example.admin.lapnew06.constants.Constants.FLICK_IMAGE_API;
 public class JsonFragment extends Fragment {
 
     private static final String TAG = JsonFragment.class.toString() ;
-    @BindView(R.id.tv_post)
-    TextView tvPost;
-    @BindView(R.id.iv_image)
-    ImageView ivImage;
+    @BindView(R.id.lv_information)
+    ListView lvInfor;
 
 
 
@@ -58,12 +58,17 @@ public class JsonFragment extends Fragment {
         setupUI();
         return view;
     }
-    private void updateQuote(final JsonModels JSONModel){
+    private void updateQuote(final JsonModels[] JSONModel){
         Activity parent = getActivity();
         parent.runOnUiThread(new Runnable() {
             @Override
             public void run() {
-//                tvPost.setText(JSONModel.getPost());
+                JsonAdapter jsonAdapter = new JsonAdapter(
+                        getContext(),
+                        android.R.layout.simple_list_item_1,
+                        JSONModel
+                );
+                lvInfor.setAdapter(jsonAdapter);
 
             }
         });
@@ -78,8 +83,8 @@ public class JsonFragment extends Fragment {
         //1 Create Client
         OkHttpClient client = new OkHttpClient();
         // 2 Create Request
-//        final Request request = new Request.Builder().url(FLICKR_API).build();
-        final Request request = new Request.Builder().url(FLICK_IMAGE_API).build();
+        final Request request = new Request.Builder().url(FLICKR_API).build();
+//        final Request request = new Request.Builder().url(FLICK_IMAGE_API).build();
         //3 Send and handle
         client.newCall(request).enqueue(new Callback() {
 
@@ -94,20 +99,19 @@ public class JsonFragment extends Fragment {
                 Log.d(TAG,"onResponse");
                 String bodyString = response.body().string();
                 Log.d(TAG, String.format("bodyString: %s ",bodyString ));
+                if (bodyString != null) {
+                    // Create Gson
+                    Gson gson = new Gson();
 
-//                // Create Gson
-//                Gson gson = new Gson();
-//
-//                // Parse
-//                JsonModels[] quote =  gson.fromJson(bodyString, JsonModels[].class);
-//                if (quote.length > 0) {
-//
-//
-//                    JsonFragment.this.updateQuote(quote[0]);
-//
-//
-//                }
-                tvPost.setText(bodyString);
+                    // Parse
+                    JsonModels[] jsoniteam =  gson.fromJson(bodyString, JsonModels[].class);
+
+                    JsonFragment.this.updateQuote(jsoniteam);
+                }
+
+
+
+
             }
         });
 
