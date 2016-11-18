@@ -4,10 +4,7 @@
         <!-- Define the background properties like color etc -->
         <item android:id="@android:id/background">
             <shape>
-                <stroke
-                    android:width="2dp"
-                    android:color="@color/White"
-                    ></stroke>
+
                 <gradient
                     android:startColor="#0041415e"
                     android:centerColor="#00ffffff"
@@ -17,6 +14,8 @@
                     />
             </shape>
         </item>
+
+
 
         <!-- Define the progress properties like start color, end color etc -->
         <item android:id="@android:id/progress">

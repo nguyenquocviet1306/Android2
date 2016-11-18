@@ -5,14 +5,7 @@
     android:background="@color/Xam"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ProgressBar
-        android:background="@drawable/round_button"
-        android:progressDrawable="@drawable/custom_progressbar"
-        android:layout_centerHorizontal="true"
-        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="200dp"
-        android:layout_height="20dp"
-        />
+
     <TextView
         android:layout_centerHorizontal="true"
         android:textSize="40dp"
@@ -93,6 +86,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
+
+    <ProgressBar
+        android:background="@drawable/round_button"
+        android:progressDrawable="@drawable/custom_progressbar"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar" />
 
 
 </RelativeLayout>

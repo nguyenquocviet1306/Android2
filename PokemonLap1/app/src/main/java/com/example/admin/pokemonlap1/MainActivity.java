@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.admin.pokemonlap1.fragment.PlayFragment;
+import com.example.admin.pokemonlap1.fragment.ScoreFragment;
 import com.example.admin.pokemonlap1.fragment.SettingFragment;
 
 import butterknife.BindView;
@@ -40,6 +42,11 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.btSetting)
     public void SettingClick(Button button){
         changeFragment(new SettingFragment(),true);
+    }
+
+    @OnClick(R.id.ivPlay)
+    public void PlayClick(ImageView imageView){
+        changeFragment(new PlayFragment(),true);
     }
 
 
