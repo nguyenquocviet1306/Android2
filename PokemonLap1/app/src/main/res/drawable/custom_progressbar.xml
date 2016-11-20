@@ -22,7 +22,7 @@
             <clip>
                 <shape>
                     <gradient
-                        android:startColor="#ffffff"
+                        android:startColor="#a36262"
                         android:centerColor="#ffffff"
                         android:centerY="1.0"
                         android:endColor="#ffffff"
