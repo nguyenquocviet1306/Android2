@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
     }
-    private void changeFragment(Fragment fragment, boolean addToBackStack){
+    public void changeFragment(Fragment fragment, boolean addToBackStack){
         FragmentTransaction fragmentTransaction =
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.activity_main,fragment);

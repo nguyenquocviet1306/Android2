@@ -7,4 +7,6 @@
     <color name="White">#FFFFFF</color>
     <color name="Back">#000000</color>
     <color name="Xam">#BDBDBD</color>
+    <color name="colorRed">#FF1744</color>
+    <color name="colorGreen">#90CAF9</color>
 </resources>

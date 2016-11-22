@@ -22,6 +22,7 @@
             android:layout_height="20dp"
             />
         <TextView
+            android:id="@+id/score"
             android:layout_centerHorizontal="true"
             android:textSize="40dp"
             android:layout_marginTop="50dp"
@@ -58,7 +59,7 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/button2" />
+                android:id="@+id/button1" />
 
             <TextView
                 android:layout_width="10dp"
@@ -72,7 +73,7 @@
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/button" />
+                android:id="@+id/button2" />
         </LinearLayout>
 
         <LinearLayout
@@ -88,6 +89,7 @@
             android:layout_below="@+id/liner1"
             >
             <Button
+                android:id="@+id/button3"
                 android:text="WARTORTLE"
                 android:textColor="@color/Back"
                 android:layout_marginRight="10dp"
@@ -97,6 +99,7 @@
                 android:layout_height="wrap_content" />
 
             <Button
+                android:id="@+id/button4"
                 android:text="POLIWAG"
                 android:textColor="@color/Back"
                 android:background="@drawable/round_button"
