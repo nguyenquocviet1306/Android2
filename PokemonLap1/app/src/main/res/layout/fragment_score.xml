@@ -4,10 +4,105 @@
     android:layout_height="match_parent"
     tools:context="com.example.admin.pokemonlap1.fragment.ScoreFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/RedMore"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="9"
+                        android:text="Quiz'Em All"
+                        android:textColor="@color/Back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+                    <Button
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/btSetting"
+                        android:background="@drawable/ic_settings_black_24dp"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingLeft="115dp"
+                    android:paddingTop="90dp"
+                    android:layout_weight="9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:text="4\n"
+                            android:textSize="50dp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/scoreMain" />
+                        <TextView
+                            android:paddingTop="60dp"
+                            android:layout_centerInParent="true"
+                            android:text="HIGHSCORE"
+                            android:textSize="30dp"
+                            android:textStyle="bold"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/White"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+
+                    android:background="@color/Back"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/ivPlay"
+            android:layout_marginTop="270dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_play"
+            android:layout_width="150dp"
+            android:layout_height="150dp"></ImageView>
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/Back"
+            android:text="Copy right Techkids 2016"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
 
 </FrameLayout>

@@ -1,5 +1,6 @@
 package com.example.admin.pokemonlap1;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     ImageView ivPlay;
     @BindView(R.id.btSetting)
     Button btSetting;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +51,12 @@ public class MainActivity extends AppCompatActivity {
     public void PlayClick(ImageView imageView){
         changeFragment(new PlayFragment(),true);
     }
+//
+//    private static MainActivity instance;
+//    public static MainActivity getInstance() {
+//        return instance;
+//    }
+
 
 
 }
